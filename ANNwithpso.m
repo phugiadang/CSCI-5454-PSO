@@ -48,7 +48,7 @@ gbest=x0(index0,:);     % initial gbest
 
 % pso algorithm
 c1=1.0; c2=2.0; 
-iter=1; maxite=1000;
+iter=1;
 
 while iter<=50
     % particles velocity updates
@@ -95,9 +95,9 @@ while iter<=50
     end
     % displaying iterative results
     if iter==1  
-        disp(sprintf('Iteration    Best particle    Objective fun'));
+        fprintf('Iteration    Best particle    Objective fun\n');
     end
-    disp(sprintf('%8g  %8g          %8.4f',iter,index,fmin0)); 
+    fprintf('%8g  %8g          %8.4f\n',iter,index,fmin0); 
     iter=iter+1; 
 end
 
